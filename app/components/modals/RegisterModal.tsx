@@ -125,7 +125,7 @@ const RegisterModal= () => {
             className="
               text-neutral-800
               cursor-pointer 
-              hover:underline
+              hover:underline hover:text-rose-500
             "
             > Log in</span>
         </p>
