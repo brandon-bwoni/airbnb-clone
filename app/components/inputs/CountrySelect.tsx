@@ -3,6 +3,7 @@
 import Select from 'react-select'
 
 import useCountries from '@/app/hooks/useCountries';
+import { useState } from 'react';
 
 export type CountrySelectValue = {
   flag: string;
@@ -22,6 +23,7 @@ const CountrySelect: React.FC<CountrySelectProps> = ({
   onChange
 }) => {
   const { getAll } = useCountries();
+  const [mount, setMount] = useState(false)
 
   return ( 
     <div>
